@@ -145,7 +145,7 @@ export default {
         query: null
       },
       products: [
-        {
+        /*{
           label: "sdk",
           name: "Cosmos<br>SDK",
           url: "https://docs.cosmos.network/",
@@ -168,7 +168,7 @@ export default {
           name: "Tendermint<br>Core",
           url: "https://docs.tendermint.com/",
           color: "#00BB00"
-        }
+        }*/
       ]
     };
   },
