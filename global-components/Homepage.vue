@@ -9,7 +9,7 @@
     .intro
       .p {{$frontmatter.description}}
     .h2 
-    .p__alt Read all about the SDK or dive straight into the code with a tutorial.
+    .p__alt 了解 CSRB 平台以及学习如何在 CSRB 上开发应用。
     .features
       router-link(to="./platform/features.html").features__item.features__item__light
         .features__item__image
@@ -17,7 +17,7 @@
         .features__item__text
           .features__item__text__h2 Read
           .features__item__text__h1 CSRB 平台介绍
-          .features__item__text__p 了解 CSRB 的核心技术和架构。
+          .features__item__text__p CSRB 的核心技术和架构。
           .features__item__text__tag
             .features__item__text__tag__text 3 min
       router-link(to="./quick_start").features__item.features__item__dark
