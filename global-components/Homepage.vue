@@ -8,38 +8,38 @@
     .h1 {{$frontmatter.title}}
     .intro
       .p {{$frontmatter.description}}
-    .h2 Getting Started
+    .h2 
     .p__alt Read all about the SDK or dive straight into the code with a tutorial.
     .features
-      router-link(to="./intro/overview.html").features__item.features__item__light
+      router-link(to="./platform/features.html").features__item.features__item__light
         .features__item__image
           icon-spaceship.features__item__image__img
         .features__item__text
           .features__item__text__h2 Read
-          .features__item__text__h1 Introduction to Cosmos SDK
-          .features__item__text__p High-level overview of the Cosmos SDK.
+          .features__item__text__h1 CSRB 平台介绍
+          .features__item__text__p 了解 CSRB 的核心技术和架构。
           .features__item__text__tag
-            .features__item__text__tag__text 5 min
-      a(href="https://tutorials.cosmos.network" target="_blank" rel="noopener").features__item.features__item__dark
+            .features__item__text__tag__text 3 min
+      router-link(to="./quick_start").features__item.features__item__dark
         icon-arrow.features__item__icon
         .features__item__image
           icon-window.features__item__image__img
         .features__item__text
           .features__item__text__h2 Use
-          .features__item__text__h1 Tutorials
-          .features__item__text__p Build your first application-specific blockchain with the Cosmos SDK.
-          .features__item__text__label View Tutorials
+          .features__item__text__h1 开发教程
+          .features__item__text__p 在 CSRB 平台上构建应用
+          .features__item__text__label 快速入门
     .sections__wrapper
-      .h2 Explore the SDK
-      .p__alt Get familiar with the SDK and explore its main concepts.
+      .h2 探索 CSRB
+      .p__alt 熟悉 CSRB 平台的各种概念和功能
       .sections
         router-link.sections__item(tag="a" :to="section.url" v-for="section in $frontmatter.sections")
           component(:is="`tm-icon-${section.icon}`").sections__item__icon
           .sections__item__wrapper
             .sections__item__title {{section.title}}
             .sections__item__desc {{section.desc}}
-    .h2 Explore the Cosmos Stack
-    .p__alt Check out the docs for the various parts of the Cosmos stack.
+    .h2 CSRB 开发参考
+    .p__alt SDK 以及 REST API 参考文档
     .stack
       a.stack__item(:href="item.url" v-for="item in $frontmatter.stack" :style="{'--accent': item.color, '--opacity': '5%'}")
         .stack__item__wrapper
