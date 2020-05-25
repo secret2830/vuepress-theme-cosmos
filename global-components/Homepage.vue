@@ -11,7 +11,7 @@
     .h2 
     .p__alt 了解 CSRB 平台以及学习如何在 CSRB 上开发应用。
     .features
-      router-link(to="./platform/features.html").features__item.features__item__light
+      router-link(to="./platform").features__item.features__item__light
         .features__item__image
           icon-spaceship.features__item__image__img
         .features__item__text
