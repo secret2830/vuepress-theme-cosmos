@@ -4,7 +4,7 @@
       .search(@click="$emit('search', true)")
         .search__icon
           icon-search
-        .search__text Search
+        .search__text 搜索
     .h1 {{$frontmatter.title}}
     .intro
       .p {{$frontmatter.description}}
@@ -82,7 +82,7 @@
   max-width 800px
 
 .h1
-  font-size 2.5rem
+  font-size 2rem
   font-weight 600
   margin-bottom 1.5rem
   padding-top 2.5rem
@@ -94,7 +94,7 @@
   margin-bottom 1rem
 
 .p
-  font-size 1.5rem
+  font-size 1.25rem
   line-height 36px
 
   &__alt
