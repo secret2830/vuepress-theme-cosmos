@@ -5,16 +5,16 @@
         .search(@click="$emit('search', true)")
           .search__icon
             icon-search
-          .search__text Search
+          .search__text 搜索
       .banners(v-if="banners")
         .banners__item(v-for="banner in banners")
           a(:href="banner.href" target="_blank" rel="noreferrer noopener")
-            img(:src="`${bannersUrl}/${banner.src}`" :alt="banner.alt" @error="$emit('bannerError', true)").aside__image
+            //- img(:src="`${bannersUrl}/${banner.src}`" :alt="banner.alt" @error="$emit('bannerError', true)").aside__image
       div(v-if="prereq && prereq.length > 0")
         .aside__title Pre-requisite reading
         a(v-for="item in prereq" :href="item.href").prereq__item {{item.text}}
       div(v-if="$page.headers && $page.headers.length > 0")
-        .aside__title On this page
+        .aside__title 大纲
         .aside__link(v-for="link in headersFiltered" :class="[`aside__link__active__${headerCurrent && headerCurrent.slug === link.slug}`]" :ref="link.slug")
           a(:href="`#${link.slug}`" :class="{selected: link.slug == selected}").aside__link__href.header-anchor {{link.title}}
 </template>

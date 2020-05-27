@@ -4,7 +4,8 @@
       router-link(to="/" v-if="!(compact === true)").logo__container
         .logo
           .logo__img
-            component(:is="`logo-${$themeConfig.label || 'sdk'}`")
+            //- component(:is="`logo-${$themeConfig.label || 'sdk'}`")
+            img(:src="$withBase('/logo.jpg')")
           .logo__text {{$site.title || 'Documentation'}}
       .items(:class="[`footer__compact__${!!(compact === true)}`]")
         div(v-for="item in value" :style="{display: $themeConfig.autoSidebar === false && item.title == 'Reference' ? 'none' : 'block'}").sidebar
@@ -32,6 +33,9 @@
     width 40px
     height 40px
     margin-right 0.75rem
+    img
+      width 100%
+      height 100%
 
   &__text
     font-weight 500

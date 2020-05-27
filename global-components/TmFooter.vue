@@ -1,30 +1,30 @@
 <template lang="pug">
-  div
-    .wrapper
-      .container
-        .footer__wrapper
-          .questions(v-if="!full")
-            .questions__wrapper
-              .questions__h1 Questions?
-              .questions__p(v-if="$themeConfig.footer.questionsText" v-html="md($themeConfig.footer.questionsText)")
-            tm-newsletter-form
-          .links(v-if="$themeConfig.footer && $themeConfig.footer.links && full")
-            .links__item(v-for="item in $themeConfig.footer.links")
-              .links__item__title {{item.title}}
-              a(v-for="link in item.children" v-if="link.title && link.url" :href="link.url" rel="noreferrer noopener" target="_blank").links__item__link {{link.title}}
-          .logo
-            .logo__item
-              router-link(to="/" tag="div").logo__image
-                component(:is="`logo-${$themeConfig.label}-text`" v-if="$themeConfig.label" fill="black")
-                component(:is="`logo-sdk-text`" v-else fill="black")
-            .logo__item.logo__link(v-if="$themeConfig.footer && $themeConfig.footer.services")
-              a(v-for="item in $themeConfig.footer.services" :href="item.url" target="_blank" :title="item.service" rel="noreferrer noopener").smallprint__item__links__item
-                svg(width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" fill="#aaa")
-                  path(:d="serviceIcon(item.service)")
-          .smallprint(v-if="$themeConfig.footer")
-            .smallprint__item.smallprint__item__links
-              a(v-if="$themeConfig.footer && $themeConfig.footer.textLink && $themeConfig.footer.textLink.text && $themeConfig.footer.textLink.url" :href="$themeConfig.footer.textLink.url") {{$themeConfig.footer.textLink.text}}
-            .smallprint__item__desc.smallprint__item(v-if="$themeConfig.footer && $themeConfig.footer.smallprint") {{$themeConfig.footer.smallprint}}
+  //- div
+  //-   .wrapper
+  //-     .container
+  //-       .footer__wrapper
+  //-         .questions(v-if="!full")
+  //-           .questions__wrapper
+  //-             .questions__h1 Questions?
+  //-             .questions__p(v-if="$themeConfig.footer.questionsText" v-html="md($themeConfig.footer.questionsText)")
+  //-           tm-newsletter-form
+  //-         .links(v-if="$themeConfig.footer && $themeConfig.footer.links && full")
+  //-           .links__item(v-for="item in $themeConfig.footer.links")
+  //-             .links__item__title {{item.title}}
+  //-             a(v-for="link in item.children" v-if="link.title && link.url" :href="link.url" rel="noreferrer noopener" target="_blank").links__item__link {{link.title}}
+  //-         .logo
+  //-           .logo__item
+  //-             router-link(to="/" tag="div").logo__image
+  //-               component(:is="`logo-${$themeConfig.label}-text`" v-if="$themeConfig.label" fill="black")
+  //-               component(:is="`logo-sdk-text`" v-else fill="black")
+  //-           .logo__item.logo__link(v-if="$themeConfig.footer && $themeConfig.footer.services")
+  //-             a(v-for="item in $themeConfig.footer.services" :href="item.url" target="_blank" :title="item.service" rel="noreferrer noopener").smallprint__item__links__item
+  //-               svg(width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" fill="#aaa")
+  //-                 path(:d="serviceIcon(item.service)")
+  //-         .smallprint(v-if="$themeConfig.footer")
+  //-           .smallprint__item.smallprint__item__links
+  //-             a(v-if="$themeConfig.footer && $themeConfig.footer.textLink && $themeConfig.footer.textLink.text && $themeConfig.footer.textLink.url" :href="$themeConfig.footer.textLink.url") {{$themeConfig.footer.textLink.text}}
+  //-           .smallprint__item__desc.smallprint__item(v-if="$themeConfig.footer && $themeConfig.footer.smallprint") {{$themeConfig.footer.smallprint}}
 </template>
 
 <style lang="stylus" scoped>

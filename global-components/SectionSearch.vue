@@ -5,38 +5,38 @@
         .search-box__icon
           icon-search(:stroke="query ? '#66A1FF' : '#aaa'" :fill="query ? '#66A1FF' : '#aaa'")
         .search-box__input
-          input(type="text" autocomplete="off" placeholder="Search" id="search-box-input" ref="search" :value="query" @input="$emit('query', $event.target.value)").search-box__input__input
+          input(type="text" autocomplete="off" placeholder="搜索" id="search-box-input" ref="search" :value="query" @input="$emit('query', $event.target.value)").search-box__input__input
         .search-box__clear
           icon-circle-cross(v-if="query && query.length > 0" @click.native="$emit('query', '')" @keydown.enter="$emit('query', '')" tabindex="1").search-box__clear__icon
-        a.search-box__button(@click="$emit('visible', false)" @keydown.enter="$emit('visible', false)" tabindex="1") Cancel
+        a.search-box__button(@click="$emit('visible', false)" @keydown.enter="$emit('visible', false)" tabindex="1") 取消
       .results
         .shortcuts(v-if="!query")
-          .shortcuts__h1 Keyboard shortcuts
+          .shortcuts__h1 键盘快捷键
           .shortcuts__table
             .shortcuts__table__row
               .shortcuts__table__row__keys
                 .shortcuts__table__row__keys__item /
-              .shortcuts__table__row__desc Open search window
+              .shortcuts__table__row__desc 打开搜索窗口
             .shortcuts__table__row
               .shortcuts__table__row__keys
                 .shortcuts__table__row__keys__item(style="font-size: .65rem") esc
-              .shortcuts__table__row__desc Close search window
+              .shortcuts__table__row__desc 关闭搜索窗口
             .shortcuts__table__row
               .shortcuts__table__row__keys
                 .shortcuts__table__row__keys__item ↵
-              .shortcuts__table__row__desc Open highlighted search result
+              .shortcuts__table__row__desc 打开突出显示的搜索结果
             .shortcuts__table__row
               .shortcuts__table__row__keys
                 .shortcuts__table__row__keys__item(style="font-size: .65rem") ▼
                 .shortcuts__table__row__keys__item(style="font-size: .65rem") ▲
-              .shortcuts__table__row__desc Navigate between search results
+              .shortcuts__table__row__desc 在搜索结果中导航
         .results__noresults__container(v-if="query && (searchResults && searchResults.length <= 0)")
           .results__noresults
             .results__noresults__icon
               icon-search
-            .results__noresults__h1 No results for #[strong “{{query}}”]
+            .results__noresults__h1 未找到关于 #[strong “{{query}}”] 的结果
             .results__noresults__p
-              span Try queries such as #[span.results__noresults__a(@click="query = 'auth'" @keydown.enter="query = 'auth'" tabindex="0") auth], #[span.results__noresults__a(@click="query = 'slashing'" @keydown.enter="query = 'slashing'" tabindex="0") slashing], or #[span.results__noresults__a(@click="query = 'staking'" @keydown.enter="query = 'staking'" tabindex="0") staking].
+              //- span 尝试查询： #[span.results__noresults__a(@click="query = 'auth'" @keydown.enter="query = 'auth'" tabindex="0") 平台介绍], #[span.results__noresults__a(@click="query = 'slashing'" @keydown.enter="query = 'slashing'" tabindex="0") 核心模块], 或 #[span.results__noresults__a(@click="query = 'staking'" @keydown.enter="query = 'staking'" tabindex="0") 快速入门].
         div(v-if="query && searchResults && searchResults.length > 0")
           .results__item(@keydown.40="focusNext" @keydown.38="focusPrev" tabindex="0" ref="result" v-for="result in searchResults" v-if="searchResults" @keydown.enter="itemClick(resultLink(result), result.item)" @click="itemClick(resultLink(result), result.item)")
             .results__item__title(v-html="resultTitle(result)")

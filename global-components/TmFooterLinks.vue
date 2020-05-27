@@ -3,7 +3,7 @@
     .links
       .links__wrapper
         .links__container(v-if="$page.frontmatter.prev || (linkPrevNext && linkPrevNext.prev && linkPrevNext.prev.frontmatter && linkPrevNext.prev.frontmatter.order !== false)")
-          .links__label Previous
+          //- .links__label Previous
           router-link.links__item.links__item__left(:to="$page.frontmatter.prev || linkPrevNext.prev.regularPath")
             .links__item__icon
               svg(width="100%" height="100%" viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg")
@@ -13,7 +13,7 @@
               .links__item__desc(v-if="linkPrevNext.prev.frontmatter.description" v-html="shorten(linkPrevNext.prev.frontmatter.description)")
       .links__wrapper
         .links__container(v-if="$page.frontmatter.next || (linkPrevNext && linkPrevNext.next && linkPrevNext.next.frontmatter && linkPrevNext.next.frontmatter.order !== false)")
-          .links__label Up next
+          //- .links__label Up next
           router-link.links__item.links__item__right(:to="$page.frontmatter.next || linkPrevNext.next.regularPath")
             div
               .links__item__title {{$page.frontmatter.next || linkPrevNext.next.title}}
