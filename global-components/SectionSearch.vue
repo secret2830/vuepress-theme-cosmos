@@ -36,7 +36,7 @@
               icon-search
             .results__noresults__h1 未找到关于 #[strong “{{query}}”] 的结果
             .results__noresults__p
-              span 尝试查询： #[span.results__noresults__a(@click="query = 'auth'" @keydown.enter="query = 'auth'" tabindex="0") 平台介绍], #[span.results__noresults__a(@click="query = 'slashing'" @keydown.enter="query = 'slashing'" tabindex="0") 核心模块], 或 #[span.results__noresults__a(@click="query = 'staking'" @keydown.enter="query = 'staking'" tabindex="0") 快速入门].
+              //- span 尝试查询： #[span.results__noresults__a(@click="query = 'auth'" @keydown.enter="query = 'auth'" tabindex="0") 平台介绍], #[span.results__noresults__a(@click="query = 'slashing'" @keydown.enter="query = 'slashing'" tabindex="0") 核心模块], 或 #[span.results__noresults__a(@click="query = 'staking'" @keydown.enter="query = 'staking'" tabindex="0") 快速入门].
         div(v-if="query && searchResults && searchResults.length > 0")
           .results__item(@keydown.40="focusNext" @keydown.38="focusPrev" tabindex="0" ref="result" v-for="result in searchResults" v-if="searchResults" @keydown.enter="itemClick(resultLink(result), result.item)" @click="itemClick(resultLink(result), result.item)")
             .results__item__title(v-html="resultTitle(result)")
