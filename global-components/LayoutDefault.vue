@@ -501,10 +501,10 @@ export default {
   mounted() {
     this.emitPrereqLinks();
     const headerAnchorClick = event => {
-      event.target.setAttribute("data-header-anchor-text", "Copied!");
+      event.target.setAttribute("data-header-anchor-text", "已拷贝!");
       copy(event.target.href);
       setTimeout(() => {
-        event.target.setAttribute("data-header-anchor-text", "Copy link!");
+        event.target.setAttribute("data-header-anchor-text", "拷贝链接!");
       }, 1000);
       event.preventDefault();
     };
@@ -518,7 +518,7 @@ export default {
     document
       .querySelectorAll(".content__default a.header-anchor")
       .forEach(node => {
-        node.setAttribute("data-header-anchor-text", "Copy link");
+        node.setAttribute("data-header-anchor-text", "拷贝链接");
         node.addEventListener("click", headerAnchorClick);
       });
     if (window.location.hash) {
