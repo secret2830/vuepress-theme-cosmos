@@ -1,42 +1,108 @@
 <template>
-<svg width="100%" height="100%" viewBox="0 0 150 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M129.04 81.9366L135.681 58.78L125.153 20.3152L95.8426 47.3566L89.2025 70.5132L105.801 87.8034L129.04 81.9366Z" fill="url(#paint0_linear)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M122.412 105.051L129.028 81.9786L112.418 64.7302L89.1905 70.5552L82.5745 93.6277L99.1854 110.876L122.412 105.051Z" fill="url(#paint1_linear)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M96.9404 193.882L115.64 128.671L98.9611 111.437L75.6844 117.214L56.5251 182.294L76.9628 188.154L96.9404 193.882Z" fill="url(#paint2_linear)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M42.0642 201.869L93.0233 133.456L51.5928 127.542L12.0095 178.467L42.0642 201.869Z" fill="url(#paint3_linear)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M98.6275 218.088L92.8579 134.032L131.018 150.902L135.385 214.524L98.6275 218.088Z" fill="url(#paint4_linear)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4626 196.23L99.4743 110.96L58.1472 105.081L5.50019 172.841L35.4626 196.23Z" stroke="url(#paint5_linear)" stroke-width="0.7"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M106.575 217.245L99.4741 110.959L137.392 127.801L143.167 213.533L106.575 217.245Z" stroke="url(#paint6_linear)" stroke-width="0.7"/>
-<defs>
-<linearGradient id="paint0_linear" x1="127.81" y1="45.3403" x2="166.704" y2="94.5326" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4154E0" stop-opacity="0.910609"/>
-<stop offset="1" stop-color="#ABB3ED"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="117.107" y1="82.6653" x2="141.785" y2="129.845" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4154E0" stop-opacity="0.910609"/>
-<stop offset="1" stop-color="#ABB3ED"/>
-</linearGradient>
-<linearGradient id="paint2_linear" x1="100.64" y1="139.499" x2="144.213" y2="188.995" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4154E0" stop-opacity="0.910609"/>
-<stop offset="1" stop-color="#ABB3ED"/>
-</linearGradient>
-<linearGradient id="paint3_linear" x1="68.6015" y1="154.034" x2="110.557" y2="229.491" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4154E0" stop-opacity="0.910609"/>
-<stop offset="1" stop-color="#ABB3ED"/>
-</linearGradient>
-<linearGradient id="paint4_linear" x1="129.742" y1="171.983" x2="171.85" y2="245.124" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4154E0" stop-opacity="0.910609"/>
-<stop offset="1" stop-color="#ABB3ED"/>
-</linearGradient>
-<linearGradient id="paint5_linear" x1="64.2552" y1="100.861" x2="36.7986" y2="196.613" gradientUnits="userSpaceOnUse">
-<stop stop-color="#8997FF"/>
-<stop offset="1" stop-color="#505EFF"/>
-</linearGradient>
-<linearGradient id="paint6_linear" x1="133.25" y1="120.644" x2="105.628" y2="216.973" gradientUnits="userSpaceOnUse">
-<stop stop-color="#8997FF"/>
-<stop offset="1" stop-color="#505EFF"/>
-</linearGradient>
-</defs>
-</svg>
-
+  <svg
+    id="图层_1"
+    data-name="图层 1"
+    width="100%"
+    height="100%"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 500 500"
+  >
+    <defs>
+      <style>
+  .cls-01 {
+    fill: url(#未命名的渐变_73);
+  }
+  .cls-02,
+  .cls-05 {
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+  .cls-02 {
+    stroke: #5166dd;
+  }
+  .cls-03 {
+    fill: url(#未命名的渐变_73-2);
+  }
+  .cls-04 {
+    fill: url(#未命名的渐变_73-3);
+  }
+  .cls-05 {
+    stroke: #fff;
+  }
+      </style>
+      <linearGradient
+        id="未命名的渐变_73"
+        x1="271.27"
+        y1="181.73"
+        x2="364.7"
+        y2="181.73"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset="0" stop-color="#5166dd" />
+        <stop offset="0.26" stop-color="#5267dd" stop-opacity="0.99" />
+        <stop offset="0.44" stop-color="#546add" stop-opacity="0.95" />
+        <stop offset="0.6" stop-color="#5870dd" stop-opacity="0.88" />
+        <stop offset="0.74" stop-color="#5e78dd" stop-opacity="0.78" />
+        <stop offset="0.88" stop-color="#6583dd" stop-opacity="0.65" />
+        <stop offset="1" stop-color="#6d8fdd" stop-opacity="0.5" />
+      </linearGradient>
+      <linearGradient
+        id="未命名的渐变_73-2"
+        x1="228.95"
+        y1="348.51"
+        x2="416.63"
+        y2="348.51"
+        xlink:href="#未命名的渐变_73"
+      />
+      <linearGradient
+        id="未命名的渐变_73-3"
+        x1="113.57"
+        y1="191.03"
+        x2="305.29"
+        y2="191.03"
+        xlink:href="#未命名的渐变_73"
+      />
+    </defs>
+    <title>图标修改</title>
+    <polygon
+      class="cls-01"
+      points="364.7 220.59 271.27 165.22 312.31 142.87 364.7 174.26 364.7 220.59"
+    />
+    <polygon
+      class="cls-02"
+      points="416.63 320.71 265.15 410.38 228.95 387.7 249.91 377.31 264.2 385.25 393.64 308.19 393.63 288.77 416.63 288.77 416.63 320.71"
+    />
+    <polygon
+      class="cls-02"
+      points="363.54 289.1 207.95 377.31 113.57 324.1 113.57 283.28 136.56 296.95 136.56 311.35 208.77 352.17 342.22 276.37 363.54 262.68 363.54 289.1"
+    />
+    <polygon
+      class="cls-02"
+      points="268.29 59.14 113.57 148.81 113.57 258.51 220.63 322.91 243.22 311.35 136.56 246.26 136.56 161.34 269.24 84.27 285.14 92.21 305.29 81.82 268.29 59.14"
+    />
+    <polygon
+      class="cls-02"
+      points="416.63 145.42 322.25 92.21 166.66 180.42 166.66 241.45 187.98 252.6 187.98 193.15 321.43 117.35 393.64 158.17 393.64 172.57 416.63 172.4 416.63 145.42"
+    />
+    <polygon
+      class="cls-02"
+      points="363.54 198.46 290.79 155.39 313.78 142.87 363.54 172.68 363.54 198.46"
+    />
+    <polygon
+      class="cls-03"
+      points="228.95 386.64 265.15 409.32 416.63 319.65 416.63 287.71 393.63 287.71 228.95 386.64"
+    />
+    <polygon
+      class="cls-04"
+      points="268.29 59.14 113.57 148.81 113.57 258.51 220.63 322.91 243.22 311.35 152.75 255.16 152.75 170.67 305.29 81.82 268.29 59.14"
+    />
+    <polyline
+      class="cls-05"
+      points="289.78 94.53 269.24 84.27 136.56 161.34 136.56 245.51 248.47 313.8"
+    />
+    <line class="cls-05" x1="284.84" y1="151.87" x2="370.45" y2="202.55" />
+    <polyline class="cls-05" points="393.22 281.96 393.64 308.19 264.2 385.25 242.33 371.17" />
+  </svg>
 </template>
